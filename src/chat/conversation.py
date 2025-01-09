@@ -1,5 +1,7 @@
+from chat.context import ChatContext
+
 class Conversation:
-    def __init__(self, user_info, chat_context):
+    def __init__(self, user_info, chat_context: ChatContext):
         self.user_info = user_info
         self.chat_context = chat_context
 
