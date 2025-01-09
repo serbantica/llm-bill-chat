@@ -32,7 +32,7 @@ llm-bill-chat-app
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/llm-chat-app.git
+   git remote add origin https://github.com/serbantica/llm-bill-chat.git
    cd llm-chat-app
    ```
 
