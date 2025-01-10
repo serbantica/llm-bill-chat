@@ -1,4 +1,4 @@
-from chat.context import ChatContext
+from src.chat.context import ChatContext
 
 class Conversation:
     def __init__(self, user_info, chat_context: ChatContext):
@@ -6,9 +6,9 @@ class Conversation:
         self.chat_context = chat_context
 
     def handle_query(self, query):
-        self.chat_context.add_message(query)
+        self.chat_context.add_message("User", query)
         response = self.generate_response(query)
-        self.chat_context.add_message(response)
+        self.chat_context.add_message("Assistant", response)
         return response
 
     def generate_response(self, query):
@@ -18,11 +18,11 @@ class Conversation:
 
     def get_bill_info(self):
         bills = self.user_info.get_bills()
-        if len(bills) < 4:
-            return "I need at least 4 bills to compare."
-        comparison_result = self.compare_bills(bills[-4:])
+        if len(bills) < 2:
+            return "I need at least 2 bills to compare."
+        comparison_result = self.compare_bills(bills[-4:])  # Assuming you want the last 4 bills
         return comparison_result
 
-    def compare_bills(self, last_four_bills):
+    def compare_bills(self, last_bills):
         # Placeholder for bill comparison logic
-        return f"Comparing the last four bills: {last_four_bills}"
+        return f"Comparing the last four bills: {last_bills}"

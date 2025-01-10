@@ -1,6 +1,12 @@
 streamlit
 pandas
-numpy
 openai
-sqlalchemy
 dotenv
+
+# if streamlit is not properly installed try:
+# !pip install streamlit - in notebook or 
+# pip install streamlit - in the terminal
+
+# for mongodb:
+# !python -m pip install "pymongo[srv]" - in notebook or
+# python -m pip install "pymongo[srv]" - in the terminal

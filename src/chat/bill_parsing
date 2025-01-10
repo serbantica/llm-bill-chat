@@ -1,0 +1,25 @@
+import pdfplumber
+
+def extrage_costuri_din_factura(pdf_path):
+    costuri = {}
+    with pdfplumber.open(pdf_path) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text()
+            lines = text.split('\n')
+            for line in lines:
+                if 'Abonament' in line:
+                    costuri['abonament'] = float(line.split()[-1].replace(',', '.'))
+                elif 'Consum suplimentar' in line:
+                    costuri['consum_suplimentar'] = float(line.split()[-1].replace(',', '.'))
+                elif 'Taxe' in line:
+                    costuri['taxe'] = float(line.split()[-1].replace(',', '.'))
+                elif 'Total' in line:
+                    costuri['total'] = float(line.split()[-1].replace(',', '.'))
+    return costuri
+
+# Calea către fișierul PDF
+pdf_path = 'C:\\Users\\ZZ029K826\\Documents\\GitHub\\llm-bill-chat-app\\FACTURA FX-24107160858.PDF'
+
+# Extragerea costurilor din factură
+costuri_factura = extrage_costuri_din_factura(pdf_path)
+print(costuri_factura)
