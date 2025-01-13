@@ -16,19 +16,68 @@ def load_user_data(user_id):
         return json.load(file)
 
 def parse_pdf_to_json(pdf_path):
+    user_id = {}
+    serie_factura = {}
+    data_factura = {}
     costuri = {}
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
             text = page.extract_text()
             if text:
                 lines = text.split('\n')
+
+                # Process each line and look for specific categories
                 for line in lines:
-                    if 'Data emiterii facturii' in line:
+                    # Check for 'Data emiterii facturii'
+                    if 'Data facturii' in line:
                         date = line.split()[-1]
-                        costuri['Data emiterii facturii'] = date
-                    elif 'Valoare facturată fără TVA' in line:
-                        value = float(line.split()[-2].replace(',', '.'))
-                        costuri['Valoare facturata'] = value
+                        data_factura['Data factura'] = date
+
+                    # Check for 'Valoare facturată fără TVA'
+                    if 'Sold precedent' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Sold precedent'] = value
+                    
+                    # Check for 'Total bază de impozitare TVA'
+                    elif 'Total platit din sold precedent' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Total platit din sold precedent'] = value
+                    
+                    # Check for 'TVA'
+                    elif 'TVA' in line and '%' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['TVA'] = value
+                    
+                    # Check for 'Dobânzi penalizatoare'
+                    elif 'Abonamente si extraopþiuni' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Dobanzi penalizatoare'] = value
+                    
+                    # Check for 'TOTAL DE PLATĂ FACTURĂ CURENTĂ'
+                    elif 'Total factura curenta fara TVA' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Total factura curenta fara TVA'] = value
+                    
+                    # Check for 'Sold Cont Contract'
+                    elif 'Servicii utilizate' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Servicii utilizate'] = value
+                    
+                    # Check for 'Compensatii'
+                    elif 'Rate terminal' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Rate terminal'] = value
+
+                    # Check for 'TVA 19,00%'
+                    elif 'TVA 19,00%' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['TVA'] = value
+
+                    # Check for 'Compensatii'
+                    elif 'Total factura curenta' in line:
+                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        costuri['Total factura curenta'] = value
+
     return costuri
 
 def check_related_keys(question, user_id):
