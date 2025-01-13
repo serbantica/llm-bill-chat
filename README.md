@@ -27,6 +27,7 @@ initialization for utils module
 ├── requirements.txt           # Project dependencies
 └── README.md                  # Project documentation
 ```
+
 ## Obs: Choose the 'Dev' branch
 
 ## Installation
