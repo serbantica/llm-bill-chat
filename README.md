@@ -15,7 +15,6 @@ This project is a proof of concept for a chat application utilizing a Large Lang
 ```
 llm-bill-chat-app
 ├── src
-│   ├── app.py                # Main entry point for the Streamlit app
 │   ├── chat
 │   │   ├── __init__.py       # Package initialization for chat module
 │   │   ├── context.py         # Manages conversation context
@@ -23,7 +22,9 @@ llm-bill-chat-app
 │   │   ├── user_info.py       # Handles user-specific information
 │   │   └── conversation.py     # Manages conversation flow
 │   └── utils
-│       └── __init__.py       # Package initialization for utils module
+│       └── __init__.py       # Package 
+├── bill.py            # Main entry point for the Streamlit app
+initialization for utils module
 ├── requirements.txt           # Project dependencies
 └── README.md                  # Project documentation
 ```
@@ -45,7 +46,7 @@ llm-bill-chat-app
 
 To run the application, execute the following command:
 ```
-streamlit run src/app.py
+streamlit run bill.py
 ```
 
 Open your web browser and navigate to `http://localhost:8501` to interact with the chat application.
