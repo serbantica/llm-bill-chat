@@ -12,8 +12,7 @@ This project is a proof of concept for a chat application utilizing a Large Lang
 
 ## Project Structure
 
-```
-llm-bill-chat-app
+```llm-bill-chat-app
 ├── src
 │   ├── chat
 │   │   ├── __init__.py       # Package initialization for chat module
@@ -28,6 +27,7 @@ initialization for utils module
 ├── requirements.txt           # Project dependencies
 └── README.md                  # Project documentation
 ```
+## Obs: Choose the 'Dev' branch
 
 ## Installation
 
