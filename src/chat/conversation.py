@@ -12,11 +12,13 @@ class Conversation:
         return response
 
     def generate_response(self, query):
-        if "bill" in query:
+        if "factura" in query:
             return self.get_bill_info()
-        return "I'm sorry, I can only assist with bill-related queries."
+        return "Imi pare rau, te pot ajuta doar cu informatii despre factura ta."
 
     def get_bill_info(self):
+        if "difer" in self.chat_context.context:
+            return self.compare_bills()
         bills = self.user_info.get_bills()
         if len(bills) < 2:
             return "I need at least 2 bills to compare."

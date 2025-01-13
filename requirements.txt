@@ -1,11 +1,17 @@
 streamlit
 pandas
-openai
+transformers
 dotenv
 
 # if streamlit is not properly installed try:
 # !pip install streamlit - in notebook or 
 # pip install streamlit - in the terminal
+
+# for torch:
+# !pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html - in notebook or
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html - in the terminal
+
 
 # for mongodb:
 # !python -m pip install "pymongo[srv]" - in notebook or
