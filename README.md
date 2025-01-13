@@ -37,7 +37,12 @@ initialization for utils module
    cd llm-chat-app
    ```
 
-2. Install the required dependencies:
+2. Create and activate a virtual environment (Windows example):
+   ```
+   python -m venv .venv .venv\Scrips\activate
+   ```
+
+3. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
