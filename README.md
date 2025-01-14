@@ -1,3 +1,4 @@
+---
 title: Llm Bill Chat
 emoji: 🥸🧮
 colorFrom: indigo
@@ -8,6 +9,7 @@ app_file: bill.py
 pinned: false
 license: apache-2.0
 short_description: 'LLM app '
+---
 
 # LLM Bill Chat App
 
