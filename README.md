@@ -1,3 +1,14 @@
+title: Llm Bill Chat
+emoji: 🥸🧮
+colorFrom: indigo
+colorTo: red
+sdk: streamlit
+sdk_version: 1.41.1
+app_file: bill.py
+pinned: false
+license: apache-2.0
+short_description: 'LLM app '
+
 # LLM Bill Chat App
 
 This project is a proof of concept for a chat application utilizing a Large Language Model (LLM) to assist users with their telecom billing inquiries. The application is built using Python and Streamlit, providing an interactive web interface for users to engage with.
