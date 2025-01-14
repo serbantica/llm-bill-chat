@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://georgeek:$HF_TOKEN@huggingface.co/spaces/georgeek/llm-bill-chat main
+        run: git push --force https://georgeek:$HF_TOKEN@huggingface.co/spaces/georgeek/llm-bill-chat main
