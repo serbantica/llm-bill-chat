@@ -20,7 +20,7 @@ def parse_pdf_to_json(pdf_path):
     serie_factura = {}
     data_factura = {}
     costuri = {}
-    with pdfplumber.open(pdf_path) as pdf:
+    with pdfplumber.open(pdf_path, ) as pdf:
         for page in pdf.pages:
             text = page.extract_text()
             if text:
@@ -33,25 +33,35 @@ def parse_pdf_to_json(pdf_path):
                         date = line.split()[-1]
                         data_factura['Data factura'] = date
 
+                    # Check for 'Serie factură'
+                    if 'rul facturii:' in line:
+                        serie = line.split()[-1]
+                        serie_factura['Serie numar'] = serie
+                        
+                    # Check for 'Cont client'
+                    if 'Cont client' in line:
+                        cont = line.split()[-1]
+                        user_id['Cont client'] = cont
+                    
                     # Check for 'Valoare facturată fără TVA'
                     if 'Sold precedent' in line:
-                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        value = line.split()[-2].replace(',', '.')  # Extract and convert to float
                         costuri['Sold precedent'] = value
                     
                     # Check for 'Total bază de impozitare TVA'
-                    elif 'Total platit din sold precedent' in line:
-                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                    elif 'din sold precedent' in line:
+                        value = line.split()[-2].replace(',', '.')  # Extract and convert to float
                         costuri['Total platit din sold precedent'] = value
                     
                     # Check for 'TVA'
                     elif 'TVA' in line and '%' in line:
-                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        value = line.split()[-2].replace(',', '.')  # Extract and convert to float
                         costuri['TVA'] = value
                     
                     # Check for 'Dobânzi penalizatoare'
-                    elif 'Abonamente si extraopþiuni' in line:
-                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
-                        costuri['Dobanzi penalizatoare'] = value
+                    elif 'Abonamente' in line:
+                        value = line.split()[-2].replace(',', '.')  # Extract and convert to float
+                        costuri['Abonamente si extraopiuni'] = value
                     
                     # Check for 'TOTAL DE PLATĂ FACTURĂ CURENTĂ'
                     elif 'Total factura curenta fara TVA' in line:
@@ -60,7 +70,7 @@ def parse_pdf_to_json(pdf_path):
                     
                     # Check for 'Sold Cont Contract'
                     elif 'Servicii utilizate' in line:
-                        value = float(line.split()[-2].replace(',', '.'))  # Extract and convert to float
+                        value = line.split()[-2].replace(',', '.')  # Extract and convert to float
                         costuri['Servicii utilizate'] = value
                     
                     # Check for 'Compensatii'
