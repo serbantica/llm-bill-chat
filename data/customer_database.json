@@ -1,0 +1,74 @@
+{
+  "customers": {
+    "722339918": {
+      "name": "Demo Customer A",
+      "status": "active",
+      "plan": "Red 19",
+      "availableBills": ["VDF682568817"],
+      "lastBillDate": "2024-12-17"
+    },
+    "738912539": {
+      "name": "Demo Customer B", 
+      "status": "active",
+      "plan": "RED 15",
+      "availableBills": ["VDF682568817"],
+      "lastBillDate": "2024-12-17"
+    },
+    "727890354": {
+      "name": "Demo Customer C",
+      "status": "active", 
+      "plan": "Red 12",
+      "availableBills": ["VDF682568817"],
+      "lastBillDate": "2024-12-17"
+    },
+    "727723568": {
+      "name": "Demo Customer D",
+      "status": "active",
+      "plan": "RED 35", 
+      "availableBills": ["VDF683003873"],
+      "lastBillDate": "2024-12-20"
+    },
+    "733934342": {
+      "name": "Demo Customer E",
+      "status": "active",
+      "plan": "Smart Net 10",
+      "availableBills": ["VDF683003873"], 
+      "lastBillDate": "2024-12-20"
+    },
+    "724899108": {
+      "name": "Demo Customer F",
+      "status": "active",
+      "plan": "RED 13",
+      "availableBills": ["VDF683003873"],
+      "lastBillDate": "2024-12-20"
+    },
+    "724015962": {
+      "name": "Demo Customer G",
+      "status": "active",
+      "plan": "RED 11", 
+      "availableBills": ["VDF685952701"],
+      "lastBillDate": "2025-01-06"
+    },
+    "373920691": {
+      "name": "Demo Customer H",
+      "status": "active",
+      "plan": "Wi-Fi Instant Nelimitat+",
+      "availableBills": ["VDF685952701"],
+      "lastBillDate": "2025-01-06"
+    },
+    "724077190": {
+      "name": "Demo Customer I",
+      "status": "active", 
+      "plan": "RED Start",
+      "availableBills": ["VDF685952701"],
+      "lastBillDate": "2025-01-06"
+    },
+    "727723137": {
+      "name": "Demo Customer Premium",
+      "status": "active",
+      "plan": "RED INFINITY 25 DEMO",
+      "availableBills": ["VDF682981042", "VDF681234567"],
+      "lastBillDate": "2024-12-20"
+    }
+  }
+}

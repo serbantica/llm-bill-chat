@@ -1,0 +1,147 @@
+{
+	"billDate": "2025-01-06",
+	"billNo": "VDF685952701",
+	"amountDue": 5550.46,
+	"costFromExpiredDiscounts": -1.6899998,
+	"extraCharge": 5445.53,
+	"taxItem": [
+		{
+			"cat": "Total factura curenta",
+			"amt": 104.93
+		},
+		{
+			"cat": "TVA 19%",
+			"amt": 16.75
+		},
+		{
+			"cat": "Total rate terminal",
+			"amt": 5445.53
+		},
+		{
+			"cat": "Abonamente si extraoptiuni",
+			"amt": 91.17
+		},
+		{
+			"cat": "Reduceri",
+			"amt": -2.99
+		},
+		{
+			"cat": "Rest plata",
+			"amt": -5073.74
+		},
+		{
+			"cat": "Sold precedent",
+			"amt": -5073.74
+		},
+		{
+			"cat": "Total de plata",
+			"amt": 476.72
+		}
+	],
+	"subscribers": [
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 34.08,
+					"name": "Red 11"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -8.52,
+					"name": "Reducere promo"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 2.99,
+					"name": "Secure Net"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -4.26,
+					"name": "Reducere promotionala 12 luni"
+				},
+				{
+					"cat": "Rate terminal",
+					"amt": 70.99,
+					"name": "Promotie Vodafone Smartphone cu plata in rate 12/36"
+				},
+				{
+					"cat": "Total sume datorate rate terminal",
+					"amt": 70.99
+				}
+			],
+			"logicalResource": "724015962",
+			"netAmount": 24.29,
+			"productRef": {
+				"name": "RED 11",
+				"@referredType": "Voce mobila"
+			},
+			"subscriberExtraCost": 70.99,
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		},
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 29.82,
+					"name": "Abonament Vodafone WiFi Instant Nelimitat+"
+				}
+			],
+			"logicalResource": "373920691",
+			"netAmount": 29.82,
+			"productRef": {
+				"name": "Wi-Fi Instant Nelimitat+",
+				"@referredType": "Date mobile nelimitat"
+			},
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		},
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Reduceri",
+					"amt": -2.99,
+					"name": "Reducere Secure Net"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 38.33,
+					"name": "RED Start"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 2.99,
+					"name": "Secure Net"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -4.26,
+					"name": "Reducere promotionala 12 luni"
+				},
+				{
+					"cat": "Rate terminal",
+					"amt": 5374.54,
+					"name": "Valoare rate ramase pana la expirare contract"
+				},
+				{
+					"cat": "Total sume datorate rate terminal",
+					"amt": 5374.54
+				}
+			],
+			"logicalResource": "724077190",
+			"netAmount": 34.07,
+			"productRef": {
+				"name": "RED Start",
+				"@referredType": "Voce mobila"
+			},
+			"subscriberExtraCost": 5374.54,
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		}
+	]
+}

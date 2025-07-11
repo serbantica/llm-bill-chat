@@ -1,0 +1,111 @@
+{
+				"billDate": "2024-12-20",
+				"billNo": "VDF682981042",
+				"amountDue": 10.15,
+				"costFromExpiredDiscounts": -0.019996643,
+				"extraCharge": 10.15,
+				"taxItem": [
+					{
+						"cat": "Total factura curenta",
+						"amt": 10.15
+					},
+					{
+						"cat": "Total sume neincluse in baza de impozitare TVA",
+						"amt": 10.15
+					},
+					{
+						"cat": "Abonamente si extraoptiuni",
+						"amt": 107.69
+					},
+					{
+						"cat": "Reduceri",
+						"amt": -107.69
+					},
+					{
+						"cat": "Sold precedent",
+						"amt": 10.15
+					},
+					{
+						"cat": "Total platit din sold precedent",
+						"amt": 10.15
+					},
+					{
+						"cat": "Total de plata",
+						"amt": 10.15
+					}
+				],
+				"subscribers": [
+					{
+						"billSummaryItem": [
+							{
+								"cat": "Total Sume incasate in numele tertilor",
+								"amt": 10.15
+							},
+							{
+								"cat": "Sume incasate in numele tertilor",
+								"amt": 10.15,
+								"name": "Donatii SMS (fara TVA)"
+							},
+							{
+								"cat": "Servicii Nationale",
+								"amt": 5.37,
+								"name": "Apel Nr. Sp. Rel. cu Clientii"
+							},
+							{
+								"cat": "Servicii Internationale",
+								"amt": 4.18,
+								"name": "Taxa 10 SMS"
+							},
+							{
+								"cat": "Servicii Nationale",
+								"amt": 5.47,
+								"name": "Servicii in parteneriat (SMS)"
+							},
+							{
+								"cat": "Reduceri",
+								"amt": -1.07,
+								"name": "Reducere Vodafone Secure Net"
+							},
+							{
+								"cat": "Reduceri",
+								"amt": -106.62,
+								"name": "Reducere abonament lunar"
+							},
+							{
+								"cat": "Reduceri",
+								"amt": -4.18,
+								"name": "Reducere promotionala 12 luni"
+							},
+							{
+								"cat": "Abonamente si extraoptiuni",
+								"amt": 106.62,
+								"name": "RED INFINITY 25 DEMO"
+							},
+							{
+								"cat": "Abonamente si extraoptiuni",
+								"amt": 1.07,
+								"name": "Vodafone Secure Net"
+							},
+							{
+								"cat": "Rate terminal",
+								"amt": 25.87,
+								"name": "Promotie Vodafone Smartphone cu plata in rate 6/36"
+							},
+							{
+								"cat": "Total sume datorate rate terminal",
+								"amt": 25.87
+							}
+						],
+						"logicalResource": "727723137",
+						"netAmount": 66.98,
+						"productRef": {
+							"name": "RED INFINITY 25 DEMO",
+							"@referredType": "Voce mobila"
+						},
+						"subscriberExtraCost": 40.89,
+						"firstBill": false,
+						"planChangeProrata": false,
+						"firstBillForBan": false
+					}
+				]
+			}

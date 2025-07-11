@@ -1,0 +1,195 @@
+{
+	"billDate": "2024-12-17",
+	"billNo": "VDF682568817",
+	"amountDue": 286.96,
+	"costFromExpiredDiscounts": 3.04,
+	"extraCharge": 99.31,
+	"taxItem": [
+		{
+			"cat": "Total factura curenta",
+			"amt": 201.38
+		},
+		{
+			"cat": "TVA 19%",
+			"amt": 32.15
+		},
+		{
+			"cat": "Total rate terminal",
+			"amt": 85.58
+		},
+		{
+			"cat": "Abonamente si extraoptiuni",
+			"amt": 158.54
+		},
+		{
+			"cat": "Reduceri",
+			"amt": -3.04
+		},
+		{
+			"cat": "Servicii utilizate",
+			"amt": 13.73
+		},
+		{
+			"cat": "Sold precedent",
+			"amt": 184.63
+		},
+		{
+			"cat": "Total platit din sold precedent",
+			"amt": 184.63
+		},
+		{
+			"cat": "Total de plata",
+			"amt": 286.96
+		}
+	],
+	"subscribers": [
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Servicii Internationale",
+					"amt": 4.18,
+					"name": "Taxa 10 SMS"
+				},
+				{
+					"cat": "Reduceri",
+					"amt": -2.94,
+					"name": "Reducere Secure Net"
+				},
+				{
+					"cat": "Reduceri",
+					"amt": -0.1,
+					"name": "Reducere Secure Net"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -2.04,
+					"name": "Red 18"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 2.24,
+					"name": "Red 19"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 66.93,
+					"name": "Red 19"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 0.1,
+					"name": "Secure Net"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 2.94,
+					"name": "Secure Net"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -4.18,
+					"name": "Reducere promotionala 12 luni"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -0.15,
+					"name": "Reducere promotionala 12 luni"
+				},
+				{
+					"cat": "Rate terminal",
+					"amt": 25.87,
+					"name": "Promotie Vodafone Smartphone cu plata in rate 1/36"
+				},
+				{
+					"cat": "Rate terminal",
+					"amt": 59.71,
+					"name": "Promotie Vodafone Smartphone cu plata in rate 1/36"
+				},
+				{
+					"cat": "Total sume datorate rate terminal",
+					"amt": 85.58
+				}
+			],
+			"logicalResource": "722339918",
+			"netAmount": 66.98,
+			"productRef": {
+				"name": "Red 19",
+				"@referredType": "Voce mobila"
+			},
+			"subscriberExtraCost": 89.76,
+			"firstBill": false,
+			"planChangeProrata": true,
+			"firstBillForBan": false,
+			"prorateCalc": {
+				"billDate": "2024-12-17T00:00:00Z",
+				"oldPlan": {
+					"name": "Red 18",
+					"value": -2.04,
+					"prorateAmount": -2.04
+				},
+				"currentPlan": {
+					"name": "Red 19",
+					"value": 66.93,
+					"prorateAmount": 2.24,
+					"valuePerDay": 2.1590323
+				},
+				"prorateDays": 1,
+				"daysBcClosed": 30.0,
+				"daysBcCurrent": 31.0,
+				"subChangeDate": "2024-12-16T00:00"
+			}
+		},
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 43.04,
+					"name": "Red 15"
+				}
+			],
+			"logicalResource": "738912539",
+			"netAmount": 43.04,
+			"productRef": {
+				"name": "RED 15",
+				"@referredType": "Voce mobila"
+			},
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		},
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Servicii Nationale",
+					"amt": 5.37,
+					"name": "Apel Nr. Sp. Rel. cu Clientii"
+				},
+				{
+					"cat": "Servicii Internationale",
+					"amt": 4.18,
+					"name": "Taxa 30 min grupa 1 tari"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 53.84,
+					"name": "Red 12"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": -4.18,
+					"name": "Reducere promo"
+				}
+			],
+			"logicalResource": "727890354",
+			"netAmount": 59.21,
+			"productRef": {
+				"name": "Red 12",
+				"@referredType": "Voce mobila"
+			},
+			"subscriberExtraCost": 9.549999,
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		}
+	]
+}

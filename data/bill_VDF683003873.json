@@ -1,0 +1,113 @@
+{
+	"billDate": "2024-12-20",
+	"billNo": "VDF683003873",
+	"amountDue": 239.87,
+	"extraCharge": 10.84,
+	"taxItem": [
+		{
+			"cat": "Total factura curenta",
+			"amt": 239.87
+		},
+		{
+			"cat": "TVA 19%",
+			"amt": 38.3
+		},
+		{
+			"cat": "Abonamente si extraoptiuni",
+			"amt": 190.73
+		},
+		{
+			"cat": "Servicii utilizate",
+			"amt": 10.84
+		},
+		{
+			"cat": "Sold precedent",
+			"amt": 229.46
+		},
+		{
+			"cat": "Total platit din sold precedent",
+			"amt": 229.46
+		},
+		{
+			"cat": "Total de plata",
+			"amt": 239.87
+		}
+	],
+	"subscribers": [
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Servicii Nationale",
+					"amt": 5.37,
+					"name": "Apel Nr. Sp. Rel. cu Clientii"
+				},
+				{
+					"cat": "Servicii Nationale",
+					"amt": 5.47,
+					"name": "Servicii in parteneriat (SMS)"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 90.29,
+					"name": "Red 35"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 2.09,
+					"name": "Secure Net"
+				}
+			],
+			"logicalResource": "727723568",
+			"netAmount": 103.22,
+			"productRef": {
+				"name": "RED 35",
+				"@referredType": "Voce mobila"
+			},
+			"subscriberExtraCost": 10.84,
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		},
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 37.61,
+					"name": "Smart Net 10"
+				}
+			],
+			"logicalResource": "733934342",
+			"netAmount": 37.61,
+			"productRef": {
+				"name": "Smart Net 10",
+				"@referredType": "Date mobile nelimitat"
+			},
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		},
+		{
+			"billSummaryItem": [
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 58.65,
+					"name": "Red 13"
+				},
+				{
+					"cat": "Abonamente si extraoptiuni",
+					"amt": 2.09,
+					"name": "Secure Net"
+				}
+			],
+			"logicalResource": "724899108",
+			"netAmount": 60.74,
+			"productRef": {
+				"name": "RED 13",
+				"@referredType": "Voce mobila"
+			},
+			"firstBill": false,
+			"planChangeProrata": false,
+			"firstBillForBan": false
+		}
+	]
+}
