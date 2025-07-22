@@ -307,9 +307,11 @@ def process_quick_action(question, user_id, model_name="gpt-4"):
         # Add the response to the conversation
         st.session_state["messages"].append({"role": "assistant", "content": response_text})
         
-        # Show token usage in sidebar
+        # Show model and token usage in sidebar
         if hasattr(completion, "usage"):
             st.sidebar.markdown("---")
+            st.sidebar.subheader("🤖 Current Model")
+            st.sidebar.write(f"**Model:** {model_name}")
             st.sidebar.subheader("🔢 Token Usage")
             st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
             st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
@@ -515,9 +517,11 @@ def main():
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
                 st.chat_message("assistant").write(response_text)
 
-                # Show token usage in sidebar
+                # Show model and token usage in sidebar
                 if hasattr(completion, "usage"):
                     st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
                     st.sidebar.subheader("🔢 Token Usage")
                     st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
                     st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
@@ -553,7 +557,17 @@ def main():
                 )
                 response_text = completion.choices[0].message.content.strip()
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
-                st.rerun()
+                
+                # Show model and token usage in sidebar
+                if hasattr(completion, "usage"):
+                    st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
+                    st.sidebar.subheader("🔢 Token Usage")
+                    st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
+                    st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
+                    st.sidebar.write(f"Total: {completion.usage.total_tokens}")
+                
             except Exception as e:
                 st.error(f"Error: {str(e)}")
     
@@ -575,7 +589,17 @@ def main():
                 )
                 response_text = completion.choices[0].message.content.strip()
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
-                st.rerun()
+                
+                # Show model and token usage in sidebar
+                if hasattr(completion, "usage"):
+                    st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
+                    st.sidebar.subheader("🔢 Token Usage")
+                    st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
+                    st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
+                    st.sidebar.write(f"Total: {completion.usage.total_tokens}")
+                
             except Exception as e:
                 st.error(f"Error: {str(e)}")
     
@@ -597,7 +621,17 @@ def main():
                 )
                 response_text = completion.choices[0].message.content.strip()
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
-                st.rerun()
+                
+                # Show model and token usage in sidebar
+                if hasattr(completion, "usage"):
+                    st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
+                    st.sidebar.subheader("🔢 Token Usage")
+                    st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
+                    st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
+                    st.sidebar.write(f"Total: {completion.usage.total_tokens}")
+                
             except Exception as e:
                 st.error(f"Error: {str(e)}")
     
@@ -622,7 +656,17 @@ def main():
                 )
                 response_text = completion.choices[0].message.content.strip()
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
-                st.rerun()
+                
+                # Show model and token usage in sidebar
+                if hasattr(completion, "usage"):
+                    st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
+                    st.sidebar.subheader("🔢 Token Usage")
+                    st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
+                    st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
+                    st.sidebar.write(f"Total: {completion.usage.total_tokens}")
+                
             except Exception as e:
                 st.error(f"Error: {str(e)}")
     
@@ -644,7 +688,17 @@ def main():
                 )
                 response_text = completion.choices[0].message.content.strip()
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
-                st.rerun()
+                
+                # Show model and token usage in sidebar
+                if hasattr(completion, "usage"):
+                    st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
+                    st.sidebar.subheader("🔢 Token Usage")
+                    st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
+                    st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
+                    st.sidebar.write(f"Total: {completion.usage.total_tokens}")
+                
             except Exception as e:
                 st.error(f"Error: {str(e)}")
     
@@ -666,7 +720,17 @@ def main():
                 )
                 response_text = completion.choices[0].message.content.strip()
                 st.session_state["messages"].append({"role": "assistant", "content": response_text})
-                st.rerun()
+                
+                # Show model and token usage in sidebar
+                if hasattr(completion, "usage"):
+                    st.sidebar.markdown("---")
+                    st.sidebar.subheader("🤖 Current Model")
+                    st.sidebar.write(f"**Model:** {model_name}")
+                    st.sidebar.subheader("🔢 Token Usage")
+                    st.sidebar.write(f"Prompt: {completion.usage.prompt_tokens}")
+                    st.sidebar.write(f"Completion: {completion.usage.completion_tokens}")
+                    st.sidebar.write(f"Total: {completion.usage.total_tokens}")
+                
             except Exception as e:
                 st.error(f"Error: {str(e)}")
 

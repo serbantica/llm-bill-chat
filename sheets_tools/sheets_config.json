@@ -1,0 +1,36 @@
+{
+  "spreadsheet_id": "your_google_sheets_id_here",
+  "credentials_file": "google_sheets_credentials.json",
+  "operations": {
+    "consolidate_data": false,
+    "update_headers": true,
+    "add_formulas": false,
+    "validate_data": false,
+    "export_filtered": false,
+    "export_csv": false,
+    "format_sheets": true,
+    "copy_format_from_template": true
+  },
+  "settings": {
+    "new_headers": ["Name", "Email", "Amount", "Date", "Status"],
+    "template_sheet_name": "Template",
+    "target_sheets": ["Sheet1", "Sheet2", "Sheet3"],
+    "formatting": {
+      "header_format": {
+        "backgroundColor": {"red": 0.2, "green": 0.6, "blue": 0.9},
+        "textFormat": {"bold": true, "foregroundColor": {"red": 1, "green": 1, "blue": 1}}
+      },
+      "data_format": {
+        "backgroundColor": {"red": 0.95, "green": 0.95, "blue": 0.95},
+        "textFormat": {"fontSize": 10}
+      },
+      "alternate_row_format": {
+        "backgroundColor": {"red": 0.9, "green": 0.9, "blue": 0.9}
+      }
+    },
+    "filter_criteria": {
+      "min_amount": 1000
+    },
+    "export_directory": "./sheet_exports"
+  }
+}
